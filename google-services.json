@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "718476597236",
+    "firebase_url": "https://zool-bc1e6.firebaseio.com",
+    "project_id": "zool-bc1e6",
+    "storage_bucket": "zool-bc1e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718476597236:android:558cf59fb8d47085584ba1",
+        "android_client_info": {
+          "package_name": "com.companyname.zool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718476597236-art9g353gjp73o810pj597d8479ojdm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr0d1n4kXSaagg22Ca9xUrg0LMHCZ9pmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718476597236-art9g353gjp73o810pj597d8479ojdm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
