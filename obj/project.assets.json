@@ -3619,24 +3619,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hack45\\.nuget\\packages\\": {},
+    "C:\\Users\\polma\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hack45\\source\\repos\\Zool\\Zool.csproj",
+      "projectUniqueName": "C:\\Users\\polma\\Source\\Repos\\Zool\\Zool.csproj",
       "projectName": "Zool",
-      "projectPath": "C:\\Users\\Hack45\\source\\repos\\Zool\\Zool.csproj",
-      "packagesPath": "C:\\Users\\Hack45\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hack45\\source\\repos\\Zool\\obj\\",
+      "projectPath": "C:\\Users\\polma\\Source\\Repos\\Zool\\Zool.csproj",
+      "packagesPath": "C:\\Users\\polma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\polma\\Source\\Repos\\Zool\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Hack45\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\polma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

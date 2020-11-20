@@ -31,6 +31,8 @@ namespace Zool
 
             Firebase_Auth.signedOutEvent += Firebase_Auth_signedOutEvent;
 
+
+
         }
 
         private void Firebase_Auth_signedOutEvent()

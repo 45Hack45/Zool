@@ -1,4 +1,4 @@
-<!--For all properties see: https://aka.ms/android-menu-resource--><menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><!--Update strings and icons--><item android:id="@+id/action_logOut" android:title="Log out" app:showAsAction="never" /></menu><!-- Code to implement into Activity:
+<!--For all properties see: https://aka.ms/android-menu-resource--><menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"><!--Update strings and icons--><item android:id="@+id/action_logOut" android:title="Log out" app:showAsAction="never" /></menu><!-- Code to implement into Activity:
 
 public override bool OnCreateOptionsMenu(IMenu menu)
 {
