@@ -5,6 +5,7 @@ background;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
 Button;obj\Debug\90\res\layout\login.xml
 Button;obj\Debug\90\res\layout\signup.xml
 cache-path;C:\Users\Hack45\source\repos\Zool\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+cache-path;C:\Users\polma\Source\Repos\Zool\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\90\res\values\colors.xml
 color;obj\Debug\90\res\values\ic_launcher_background.xml
 com.google.android.material.bottomnavigation.BottomNavigationView;obj\Debug\90\res\layout\activity_main.xml
@@ -12,7 +13,9 @@ dimen;obj\Debug\90\res\values\dimens.xml
 EditText;obj\Debug\90\res\layout\login.xml
 EditText;obj\Debug\90\res\layout\signup.xml
 external-cache-path;C:\Users\Hack45\source\repos\Zool\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-cache-path;C:\Users\polma\Source\Repos\Zool\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\Hack45\source\repos\Zool\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;C:\Users\polma\Source\Repos\Zool\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
 item;obj\Debug\90\res\menu\main_page_navigation.xml
@@ -29,15 +32,18 @@ path;obj\Debug\90\res\drawable\ic_dashboard_black_24dp.xml
 path;obj\Debug\90\res\drawable\ic_home_black_24dp.xml
 path;obj\Debug\90\res\drawable\ic_notifications_black_24dp.xml
 paths;C:\Users\Hack45\source\repos\Zool\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;C:\Users\polma\Source\Repos\Zool\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 RelativeLayout;obj\Debug\90\res\layout\activity_main.xml
 RelativeLayout;obj\Debug\90\res\layout\camera.xml
 resources;C:\Users\Hack45\source\repos\Zool\obj\Debug\90\googsvcsjson\values\goog_svcs_json.xml
+resources;C:\Users\polma\source\repos\Zool\obj\Debug\90\googsvcsjson\values\goog_svcs_json.xml
 resources;obj\Debug\90\res\values\colors.xml
 resources;obj\Debug\90\res\values\dimens.xml
 resources;obj\Debug\90\res\values\ic_launcher_background.xml
 resources;obj\Debug\90\res\values\strings.xml
 resources;obj\Debug\90\res\values\styles.xml
 string;C:\Users\Hack45\source\repos\Zool\obj\Debug\90\googsvcsjson\values\goog_svcs_json.xml
+string;C:\Users\polma\source\repos\Zool\obj\Debug\90\googsvcsjson\values\goog_svcs_json.xml
 string;obj\Debug\90\res\values\strings.xml
 style;obj\Debug\90\res\values\styles.xml
 SurfaceView;obj\Debug\90\res\layout\camera.xml
