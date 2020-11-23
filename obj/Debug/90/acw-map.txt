@@ -1,6 +1,15 @@
-Zool.LogSign_Activity, Zool;crc64f2cba9b5d7a092c9.LogSign_Activity
-Zool.LogSign_Activity;crc64f2cba9b5d7a092c9.LogSign_Activity
-zool.LogSign_Activity;crc64f2cba9b5d7a092c9.LogSign_Activity
+Zool.Camera_Activity, Zool;crc64f2cba9b5d7a092c9.Camera_Activity
+Zool.Camera_Activity;crc64f2cba9b5d7a092c9.Camera_Activity
+zool.Camera_Activity;crc64f2cba9b5d7a092c9.Camera_Activity
+Zool.Login_Activity, Zool;crc64f2cba9b5d7a092c9.Login_Activity
+Zool.Login_Activity;crc64f2cba9b5d7a092c9.Login_Activity
+zool.Login_Activity;crc64f2cba9b5d7a092c9.Login_Activity
+Zool.Profile_Activity, Zool;crc64f2cba9b5d7a092c9.Profile_Activity
+Zool.Profile_Activity;crc64f2cba9b5d7a092c9.Profile_Activity
+zool.Profile_Activity;crc64f2cba9b5d7a092c9.Profile_Activity
+Zool.Signin_Activity, Zool;crc64f2cba9b5d7a092c9.Signin_Activity
+Zool.Signin_Activity;crc64f2cba9b5d7a092c9.Signin_Activity
+zool.Signin_Activity;crc64f2cba9b5d7a092c9.Signin_Activity
 Zool.MainActivity, Zool;crc64f2cba9b5d7a092c9.MainActivity
 Zool.MainActivity;crc64f2cba9b5d7a092c9.MainActivity
 zool.MainActivity;crc64f2cba9b5d7a092c9.MainActivity

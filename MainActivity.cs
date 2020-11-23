@@ -35,7 +35,7 @@ namespace Zool
 
         private void Firebase_Auth_signedOutEvent()
         {
-            Intent intent = new Intent(this, typeof(LogSign_Activity));
+            Intent intent = new Intent(this, typeof(Login_Activity));
             StartActivity(intent);
         }
 
@@ -53,19 +53,21 @@ namespace Zool
                     textMessage.SetText(Resource.String.title_home);
                     return true;
                 case Resource.Id.navigation_camera:
-                    textMessage.SetText(Resource.String.title_autoSearch);
+                    //textMessage.SetText(Resource.String.title_autoSearch);
+                    Intent intent = new Intent(this, typeof(Camera_Activity));
+                    StartActivity(intent);
                     return true;
             }
             return false;
         }
 
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             //change main_compat_menu
-            MenuInflater.Inflate(Resource.Menu.logOut_ActionMenu, menu);
+            MenuInflater.Inflate(Resource.Menu.MainPage_ActionMenu, menu);
             return base.OnCreateOptionsMenu(menu);
         }
-
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
@@ -73,6 +75,10 @@ namespace Zool
             {
                 case Resource.Id.action_logOut:
                     Firebase_Auth.LogOut();
+                    break;
+                case Resource.Id.action_Profile:
+                    Intent intent = new Intent(this, typeof(Profile_Activity));
+                    StartActivity(intent);
                     break;
             }
             return base.OnOptionsItemSelected(item);
