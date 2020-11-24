@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\polma\\source\\repos\\Zool\\Zool.csproj": {}
+    "C:\\Users\\Hack45\\source\\repos\\Zool\\Zool.csproj": {}
   },
   "projects": {
-    "C:\\Users\\polma\\source\\repos\\Zool\\Zool.csproj": {
+    "C:\\Users\\Hack45\\source\\repos\\Zool\\Zool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\polma\\source\\repos\\Zool\\Zool.csproj",
+        "projectUniqueName": "C:\\Users\\Hack45\\source\\repos\\Zool\\Zool.csproj",
         "projectName": "Zool",
-        "projectPath": "C:\\Users\\polma\\source\\repos\\Zool\\Zool.csproj",
-        "packagesPath": "C:\\Users\\polma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\polma\\source\\repos\\Zool\\obj\\",
+        "projectPath": "C:\\Users\\Hack45\\source\\repos\\Zool\\Zool.csproj",
+        "packagesPath": "C:\\Users\\Hack45\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hack45\\source\\repos\\Zool\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\polma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hack45\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[1.0.0.6, )"
             },
+            "Xamarin.AndroidX.Legacy.Support.V4": {
+              "target": "Package",
+              "version": "[1.0.0.5, )"
+            },
             "Xamarin.AndroidX.Lifecycle.LiveData": {
               "target": "Package",
               "version": "[2.2.0.3, )"
@@ -70,9 +74,17 @@
               "target": "Package",
               "version": "[119.3.1, )"
             },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1687, )"
+            },
             "Xamarin.Google.Android.Material": {
               "target": "Package",
               "version": "[1.1.0.5, )"
+            },
+            "Xamarin.GooglePlayServices.Ads.Lite": {
+              "target": "Package",
+              "version": "[119.1.0, )"
             },
             "Xamarin.GooglePlayServices.Vision": {
               "target": "Package",

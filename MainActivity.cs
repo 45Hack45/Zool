@@ -6,6 +6,7 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using Android.Gms.Ads;
 
 using Zool.Firebase_Interface;
 
@@ -18,6 +19,8 @@ namespace Zool
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            //MobileAds.Initialize(ApplicationContext, "ca-app-pub-9328745187864745~5178457296");
+
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
@@ -31,7 +34,10 @@ namespace Zool
 
             Firebase_Auth.signedOutEvent += Firebase_Auth_signedOutEvent;
 
-
+            var adView = FindViewById<AdView>(Resource.Id.adMobBanner);
+            var adRequest = new AdRequest.Builder()
+                .Build();
+            adView.LoadAd(adRequest);
 
         }
 
