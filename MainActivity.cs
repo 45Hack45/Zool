@@ -32,7 +32,9 @@ namespace Zool
             //Init firebase
             FirebaseInterface.Initialize();
 
-            Firebase_Auth.signedOutEvent += Firebase_Auth_signedOutEvent;
+            Firebase_Database.UpdateValue("Test", "Pollo");
+
+            Firebase_Auth.SignedOutEvent += Firebase_Auth_signedOutEvent;
 
             var adView = FindViewById<AdView>(Resource.Id.adMobBanner);
             var adRequest = new AdRequest.Builder()
@@ -79,13 +81,14 @@ namespace Zool
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
+            Intent intent;
             switch (item.ItemId)
             {
                 case Resource.Id.action_logOut:
                     Firebase_Auth.LogOut();
                     break;
                 case Resource.Id.action_Profile:
-                    Intent intent = new Intent(this, typeof(Profile_Activity));
+                    intent = new Intent(this, typeof(Profile_Activity));
                     StartActivity(intent);
                     break;
             }

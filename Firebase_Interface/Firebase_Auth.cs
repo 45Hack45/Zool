@@ -28,8 +28,8 @@ namespace Zool.Firebase_Interface
 
         public delegate void AuthStateChangeDelegate();
 
-        public static event AuthStateChangeDelegate signedInEvent;
-        public static event AuthStateChangeDelegate signedOutEvent;
+        public static event AuthStateChangeDelegate SignedInEvent;
+        public static event AuthStateChangeDelegate SignedOutEvent;
 
         public static void Init()
         {
@@ -55,20 +55,32 @@ namespace Zool.Firebase_Interface
         }
 
         //Sign in in with Email and Password
-        //Returns true if it's successfull
-        public static bool CreateUserWithEmailAndPassword(string email, string password)
+        public static Task CreateUserWithEmailAndPassword(string email, string password)
         {
-            Task task = auth.CreateUserWithEmailAndPasswordAsync(email, password);
+            return auth.CreateUserWithEmailAndPasswordAsync(email, password);
+        }
 
-            Util.TaskCompletion taskCompletion = Util.TaskManager.CheckTask("SignIn", task);
-
-            if (taskCompletion == Util.TaskCompletion.Success)
+        public static Task UpdateAccount(string username, string profileImage)
+        {
+            if(auth_user != null)
             {
-                Util.DebugLog.shortMSG("Signed In succesfully");
-                return true;
+                if (username == "" && profileImage == "")//Not doing anything
+                    return null;
+
+                var userProfileBuilder = new UserProfileChangeRequest.Builder();
+
+                if (username != "") userProfileBuilder.SetDisplayName(username);
+                if (profileImage != "")
+                {
+                    Android.Net.Uri uri = new Android.Net.Uri.Builder().Path(profileImage).Build();
+                    userProfileBuilder.SetPhotoUri(uri);
+                }
+
+                UserProfileChangeRequest userProfile = userProfileBuilder.Build();
+
+                return auth_user.UpdateProfileAsync(userProfile);
             }
-            else
-                return false;
+            else return null;
         }
 
         public static void LogOut()
@@ -87,26 +99,29 @@ namespace Zool.Firebase_Interface
                 if (!signedIn && user != null)
                 {
                     Util.DebugLog.shortMSG("Signed out " + user.DisplayName);
-                    signedOutEvent?.Invoke();
+                    SignedOutEvent?.Invoke();
                 }
                 user = senderAuth.CurrentUser;
                 userByAuth[senderAuth.App.Name] = user;
                 if (signedIn)
                 {
-                    Util.DebugLog.shortMSG("Signed in " + user.DisplayName);
+                    Util.DebugLog.shortMSG("Signed in");
+                    Util.DebugLog.longMSG("Welcome " + user.DisplayName);
                     userName = user.DisplayName ?? "";
-                    signedInEvent?.Invoke();
+                    SignedInEvent?.Invoke();
                 }
             }
             else if (senderAuth.CurrentUser == user && user != null)
             {
-                Util.DebugLog.shortMSG("Logged in "+user.DisplayName);
-                signedInEvent?.Invoke();
+                Util.DebugLog.shortMSG("Logged in");
+                Util.DebugLog.longMSG("Welcome " + user.DisplayName);
+                userName = user.DisplayName ?? "";
+                SignedInEvent?.Invoke();
             }
             else if (user == null)
             {
                 Util.DebugLog.shortMSG("Logged Out");
-                signedOutEvent?.Invoke();
+                SignedOutEvent?.Invoke();
             }
 
             auth_user = auth.CurrentUser;

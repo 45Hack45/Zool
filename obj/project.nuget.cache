@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "alx8O5NBO+silyqJtxFzIJa9Nx3tALV4czjBwQ/i9zMRN+Jlb//wN5e8XDWvQuU4sjJW/ilakKryF91x2vrt7Q==",
+  "dgSpecHash": "+xnIzLJK7KvKHl5bRKKuF6HJeebBZmx849uttPp6Ep8RFpwhX4HFEyy3OITQGKSuDlDTiqBYSg1aQKD7yHdNNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hack45\\source\\repos\\Zool\\Zool.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hack45\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.lifecycle.common\\1.1.1.3\\xamarin.android.arch.lifecycle.common.1.1.1.3.nupkg.sha512",
@@ -90,6 +91,8 @@
     "C:\\Users\\Hack45\\.nuget\\packages\\xamarin.firebase.auth.interop\\119.0.0\\xamarin.firebase.auth.interop.119.0.0.nupkg.sha512",
     "C:\\Users\\Hack45\\.nuget\\packages\\xamarin.firebase.common\\119.3.0\\xamarin.firebase.common.119.3.0.nupkg.sha512",
     "C:\\Users\\Hack45\\.nuget\\packages\\xamarin.firebase.components\\116.0.0\\xamarin.firebase.components.116.0.0.nupkg.sha512",
+    "C:\\Users\\Hack45\\.nuget\\packages\\xamarin.firebase.database\\119.3.0\\xamarin.firebase.database.119.3.0.nupkg.sha512",
+    "C:\\Users\\Hack45\\.nuget\\packages\\xamarin.firebase.database.collection\\117.0.1\\xamarin.firebase.database.collection.117.0.1.nupkg.sha512",
     "C:\\Users\\Hack45\\.nuget\\packages\\xamarin.forms\\4.8.0.1687\\xamarin.forms.4.8.0.1687.nupkg.sha512",
     "C:\\Users\\Hack45\\.nuget\\packages\\xamarin.google.android.material\\1.1.0.5\\xamarin.google.android.material.1.1.0.5.nupkg.sha512",
     "C:\\Users\\Hack45\\.nuget\\packages\\xamarin.google.autovalue.annotations\\1.6.5\\xamarin.google.autovalue.annotations.1.6.5.nupkg.sha512",

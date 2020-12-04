@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 using Android.App;
 using Android.Content;
@@ -11,6 +12,8 @@ using Android.Views;
 using Android.Widget;
 
 using Zool.Firebase_Interface;
+
+using Newtonsoft.Json;
 
 namespace Zool
 {
@@ -28,7 +31,9 @@ namespace Zool
             // Create your application here
             SetContentView(Resource.Layout.SignUp);
 
-            Firebase_Auth.signedInEvent += Firebase_Auth_signedInEvent;
+            FirebaseInterface.Initialize();
+
+            Firebase_Auth.SignedInEvent += Firebase_Auth_signedInEvent;
 
             username_ifield     = FindViewById<EditText>(Resource.Id.username__inputfield);
             email_ifield        = FindViewById<EditText>(Resource.Id.email_inputfield);
@@ -49,16 +54,32 @@ namespace Zool
 
         private void Firebase_Auth_signedInEvent()
         {
-            Intent intent = new Intent(this, typeof(MainActivity));
-            StartActivity(intent);
+            //Intent intent = new Intent(this, typeof(MainActivity));
+            //StartActivity(intent);
         }
 
-        private void SignupButton_Click(object sender, EventArgs e)
+        private async void SignupButton_Click(object sender, EventArgs e)
         {
-
             if (checkInput())
             {
-                Firebase_Auth.CreateUserWithEmailAndPassword(email_ifield.Text, password_ifield.Text);
+                Data_Models.User_DataModel user = new Data_Models.User_DataModel();
+
+                await Firebase_Auth.CreateUserWithEmailAndPassword(email_ifield.Text, password_ifield.Text);
+
+                Android.Util.Log.Debug("Create User", "Signed In succesfully");
+
+                user.UserID = Firebase_Auth.auth_user.Uid;
+                user.DisplayName = username_ifield.Text;
+
+                await Firebase_Auth.UpdateAccount(user.DisplayName, "");
+
+                Android.Util.Log.Debug("Update Profile", "Updated Profile succesfully");
+
+                string userJSON = JsonConvert.SerializeObject(user);
+
+                Firebase_Database.UpdateValue("Users/" + user.UserID, userJSON);
+
+                Util.DebugLog.shortMSG("Updated Database succesfully");
             }
         }
 
@@ -69,6 +90,11 @@ namespace Zool
         }
 
         public bool checkInput (){
+            if(username_ifield.Text == "")
+            {
+                Util.DebugLog.shortMSG("Username can't be empty");
+                return false;
+            }
             return true;
         }
     }

@@ -28,7 +28,7 @@ namespace Zool
             // Create your application here
             SetContentView(Resource.Layout.LogIn);
 
-            Firebase_Auth.signedInEvent += Firebase_Auth_signedInEvent;
+            Firebase_Auth.SignedInEvent += Firebase_Auth_signedInEvent;
 
             email_ifield        = FindViewById<EditText>(Resource.Id.email_inputfield);
             password_ifield     = FindViewById<EditText>(Resource.Id.password_inputfield);

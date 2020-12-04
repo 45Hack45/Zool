@@ -9731,11 +9731,11 @@ namespace Zool
 			// aapt resource value: 0x7F08004B
 			public const int application_name = 2131230795;
 			
-			// aapt resource value: 0x7F080002
-			public const int APP_NAME = 2131230722;
-			
 			// aapt resource value: 0x7F08004A
 			public const int app_name = 2131230794;
+			
+			// aapt resource value: 0x7F080002
+			public const int APP_NAME = 2131230722;
 			
 			// aapt resource value: 0x7F08004C
 			public const int async = 2131230796;
@@ -10485,10 +10485,13 @@ namespace Zool
 			public const int title_template = 2131231037;
 			
 			// aapt resource value: 0x7F08013E
-			public const int top = 2131231038;
+			public const int toolbar = 2131231038;
 			
 			// aapt resource value: 0x7F08013F
-			public const int topPanel = 2131231039;
+			public const int top = 2131231039;
+			
+			// aapt resource value: 0x7F080140
+			public const int topPanel = 2131231040;
 			
 			// aapt resource value: 0x7F08000A
 			public const int TOP_END = 2131230730;
@@ -10496,65 +10499,68 @@ namespace Zool
 			// aapt resource value: 0x7F08000B
 			public const int TOP_START = 2131230731;
 			
-			// aapt resource value: 0x7F080140
-			public const int touch_outside = 2131231040;
-			
 			// aapt resource value: 0x7F080141
-			public const int transition_current_scene = 2131231041;
+			public const int touch_outside = 2131231041;
 			
 			// aapt resource value: 0x7F080142
-			public const int transition_layout_save = 2131231042;
+			public const int transition_current_scene = 2131231042;
 			
 			// aapt resource value: 0x7F080143
-			public const int transition_position = 2131231043;
+			public const int transition_layout_save = 2131231043;
 			
 			// aapt resource value: 0x7F080144
-			public const int transition_scene_layoutid_cache = 2131231044;
+			public const int transition_position = 2131231044;
 			
 			// aapt resource value: 0x7F080145
-			public const int transition_transform = 2131231045;
+			public const int transition_scene_layoutid_cache = 2131231045;
 			
 			// aapt resource value: 0x7F080146
-			public const int txtResult = 2131231046;
+			public const int transition_transform = 2131231046;
 			
 			// aapt resource value: 0x7F080147
-			public const int @unchecked = 2131231047;
+			public const int txtResult = 2131231047;
 			
 			// aapt resource value: 0x7F080148
-			public const int uniform = 2131231048;
+			public const int @unchecked = 2131231048;
 			
 			// aapt resource value: 0x7F080149
-			public const int unlabeled = 2131231049;
+			public const int uniform = 2131231049;
 			
 			// aapt resource value: 0x7F08014A
-			public const int up = 2131231050;
+			public const int unlabeled = 2131231050;
 			
 			// aapt resource value: 0x7F08014B
-			public const int useLogo = 2131231051;
+			public const int up = 2131231051;
 			
 			// aapt resource value: 0x7F08014C
-			public const int username__inputfield = 2131231052;
+			public const int useLogo = 2131231052;
 			
 			// aapt resource value: 0x7F08014D
-			public const int view_offset_helper = 2131231053;
+			public const int userName_text = 2131231053;
 			
 			// aapt resource value: 0x7F08014E
-			public const int view_tree_saved_state_registry_owner = 2131231054;
+			public const int username__inputfield = 2131231054;
 			
 			// aapt resource value: 0x7F08014F
-			public const int visible = 2131231055;
+			public const int view_offset_helper = 2131231055;
 			
 			// aapt resource value: 0x7F080150
-			public const int visible_removing_fragment_view_tag = 2131231056;
+			public const int view_tree_saved_state_registry_owner = 2131231056;
 			
 			// aapt resource value: 0x7F080151
-			public const int wide = 2131231057;
+			public const int visible = 2131231057;
 			
 			// aapt resource value: 0x7F080152
-			public const int withText = 2131231058;
+			public const int visible_removing_fragment_view_tag = 2131231058;
 			
 			// aapt resource value: 0x7F080153
-			public const int wrap_content = 2131231059;
+			public const int wide = 2131231059;
+			
+			// aapt resource value: 0x7F080154
+			public const int withText = 2131231060;
+			
+			// aapt resource value: 0x7F080155
+			public const int wrap_content = 2131231061;
 			
 			static Id()
 			{

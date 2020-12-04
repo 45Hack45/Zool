@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>pixel_2_lollipop_5_0_-_api_21</SelectedDevice>
     <DefaultDevice>pixel_2_lollipop_5_0_-_api_21</DefaultDevice>
-    <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
-    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredDevice>pixel_2</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

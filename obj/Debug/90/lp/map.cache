@@ -46,6 +46,8 @@ Xamarin.Firebase.Auth
 Xamarin.Firebase.Auth.Interop
 Xamarin.Firebase.Common
 Xamarin.Firebase.Components
+Xamarin.Firebase.Database.Collection
+Xamarin.Firebase.Database
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Google.Android.Material
@@ -113,7 +115,9 @@ playservicesmeasurementbase-17.4.1
 playservicesmeasurementsdkapi-17.4.1
 playservicesadsbase-19.1.0
 playservicesadslite-19.1.0
+firebasedatabasecollection-17.0.1
 firebasecomponents-16.0.0
 firebasecommon-19.3.0
 firebaseauthinterop-19.0.0
+firebasedatabase-19.3.0
 firebaseauth-19.3.1

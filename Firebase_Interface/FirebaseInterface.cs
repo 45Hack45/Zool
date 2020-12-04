@@ -33,6 +33,7 @@ namespace Zool.Firebase_Interface
             }
 
             Firebase_Auth.Init();
+            Firebase_Database.Init();
         }
     }
 }
