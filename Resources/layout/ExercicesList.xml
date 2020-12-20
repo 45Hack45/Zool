@@ -47,7 +47,6 @@
         android:layout_marginLeft="3.0dp"
         android:scrollbars="none"
         android:foregroundGravity="bottom"
-        android:foregroundInsidePadding="false"
         android:textStyle="normal"
         android:fadingEdge="none"
         android:allowUndo="true"
@@ -82,7 +81,6 @@
         android:layout_marginLeft="14.0dp"
         android:layout_marginRight="189.5dp"
         android:layout_marginTop="30.5dp"
-        android:foregroundInsidePadding="false"
         android:foregroundTint="#ff212121" />
     <ImageView
         android:src="#1a3db5eb"

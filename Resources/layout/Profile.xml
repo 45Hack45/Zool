@@ -1,37 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Toolbar
-        android:minHeight="?android:attr/actionBarSize"
-        android:background="?android:attr/colorPrimary"
-        android:theme="@style/AppTheme"
-        android:minWidth="25px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toolbar" />
-
-    <TextView
-        android:text="Medium Text"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout1">
+    <RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
-        android:id="@+id/userName_text" />
-
-    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ListView
-            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout2">
+        <ImageView
+            android:src="@drawable/arrow_left"
+            android:layout_width="39.0dp"
+            android:layout_height="34.0dp"
+            android:id="@+id/BackArrow_image"
+            android:layout_marginTop="7.0dp"
+            android:layout_marginLeft="8.0dp" />
+        <ImageView
+            android:src="@drawable/account_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="95.5dp"
+            android:layout_toRightOf="@id/imageView1"
+            android:id="@+id/IconaUsuari_image"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:layout_centerInParent="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/imageView1"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="45.0dp"
+            android:layout_marginTop="45.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:rotation="0" />
+        <TextView
+            android:text="NOM USUARI"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ExerciceListView"/>
-    </ScrollView>
-
-</LinearLayout>
+            android:layout_below="@id/imageView2"
+            android:id="@+id/NomUsuari_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0.0dp" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="220.0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:id="@+id/progressBar1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28.5dp"
+            android:background="#333debd0"
+            android:progressBackgroundTint="#333debd0"
+            android:progressTint="#b23debd0" />
+        <TextView
+            android:text="Nivell actual"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="112.5dp"
+            android:layout_height="32.0dp"
+            android:layout_toLeftOf="@id/progressBar1"
+            android:id="@+id/NivellActual_text"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="197.0dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false" />
+        <TextView
+            android:text="Pròxim nivell"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/progressBar1"
+            android:id="@+id/ProximNivell_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="196.5dp" />
+        <TextView
+            android:text="following"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:id="@+id/Following_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16.0dp"
+            android:layout_marginRight="90.0dp" />
+        <TextView
+            android:text="followers"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/relativeLayout2"
+            android:id="@+id/Followers_text"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="232.0dp"
+            android:layout_marginLeft="114.0dp" />
+        <TextView
+            android:text="nº"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:id="@+id/textView6"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginLeft="94.0dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="nº"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:id="@+id/textView6"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_toLeftOf="@id/textView5"
+            android:layout_marginRight="6.0dp" />
+        <TextView
+            android:text="UPLOADED FIELDS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:id="@+id/UPLOADEDFIELDS_text"
+            android:layout_marginTop="24.0dp"
+            android:layout_marginLeft="15.0dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="FIELDS OF INTEREST"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:id="@+id/FIELDSOFINTEREST_text"
+            android:layout_marginTop="24.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7.0dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="SCIENCE"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView7"
+            android:id="@+id/ScienceUP_text"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/imageView3"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="217.0dp"
+            android:layout_marginLeft="19.5dp"
+            android:layout_marginTop="14.0dp"
+            android:textStyle="bold"
+            android:textColor="#ff585858" />
+        <ImageView
+            android:src="#403db5eb"
+            android:layout_width="104.5dp"
+            android:layout_height="27.5dp"
+            android:layout_below="@id/textView7"
+            android:id="@+id/imageView3"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginTop="9.0dp" />
+        <ImageView
+            android:src="@drawable/atom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView7"
+            android:id="@+id/IconaScience1_image"
+            android:layout_marginLeft="94.5dp"
+            android:layout_marginTop="11.5dp"
+            android:tint="#ff6b6b6b" />
+        <ImageView
+            android:src="#403db5eb"
+            android:layout_width="108.5dp"
+            android:layout_height="26.5dp"
+            android:layout_below="@id/textView7"
+            android:id="@+id/imageView5"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9.5dp"
+            android:layout_marginRight="70.5dp" />
+        <ImageView
+            android:src="@drawable/atom"
+            android:layout_width="50.5dp"
+            android:layout_height="25.5dp"
+            android:layout_below="@id/textView7"
+            android:id="@+id/IconaScience2_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60.5dp"
+            android:layout_marginTop="9.0dp"
+            android:tint="#ff6b6b6b" />
+        <TextView
+            android:text="SCIENCE"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView7"
+            android:id="@+id/ScienceFOI_text"
+            android:layout_marginLeft="212.0dp"
+            android:layout_marginTop="14.0dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="384.5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:id="@+id/imageView7"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/imageView1"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="271.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>
