@@ -33,7 +33,7 @@ namespace Zool
 
             FirebaseInterface.Initialize();
 
-            var usernameText = FindViewById<TextView>(Resource.Id.userName_text);
+            var usernameText = FindViewById<TextView>(Resource.Id.NomUsuari_text);
 
             var listener = Firebase_Database.GetValueListener("Users/"+Firebase_Auth.auth_user.Uid);
 
@@ -42,7 +42,7 @@ namespace Zool
 
         private void Listener_DataRetrived(object sender, DatabaseEventListener.DataEventArgs e)
         {
-            var usernameText = FindViewById<TextView>(Resource.Id.userName_text);
+            var usernameText = FindViewById<TextView>(Resource.Id.NomUsuari_text);
 
             User_DataModel user_Data = JsonConvert.DeserializeObject<User_DataModel>((string)e.Snapshot.Value);
 
